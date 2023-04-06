@@ -105,6 +105,9 @@ body {
 .external-links{
     margin: 20px;
 }
+.icons{
+    max-width: 50px;
+}
 .spacer{
     margin: auto;
         /* padding: 20px 204px */
@@ -457,7 +460,6 @@ label {
 
 .client-input {
     margin: auto 0;
-    /* width: 100%; */
     width: 100%;
 }
 
@@ -846,5 +848,8 @@ textarea {
     padding: 2px;
     max-width: 210px;
     border-radius: 40px;
+}
+.to-top{
+    display: none;
 }
 }
