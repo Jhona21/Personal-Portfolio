@@ -1,0 +1,850 @@
+/* toDo */
+/* fix project view layout as well as the form layout(look for pictures for the form.) */
+:root {
+    /* primary colours */
+    --dark-purple-background-color: #22223B;
+    --light-purple-hover-color: #4A4E69;
+    --dark-beige-links-color: #9A8C98;
+    --light-beige-hover-color: #C9ADA7;
+    --light-paraghraph-color: #F2E9E4;
+
+    /* Secondary Colours */
+    --animation-purlple-color: #4F2867;
+    --white-color: #FFFFFF;
+
+}
+
+/* Main Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--dark-purple-background-color);
+    color: var(--light-paraghraph-color);
+}
+
+/* -------------------- */
+.nav-bar {
+    flex-direction: row;
+    align-items: center;
+    height: 80px;
+    display: flex;
+    width: 100%;
+        background-color: var(--light-purple-hover-color);
+}
+
+.navbar-2 {
+    background-color: var(--light-purple-hover-color);
+}
+.logo{
+    max-width: 60px;
+    max-height: 60px;
+    border-radius: 8px;
+    margin: 5px 0 5px 15px;
+}
+.middle {
+    margin: auto;
+}
+
+.nav-item {
+    color: var(--white-color);
+    transition: 1s;
+    z-index: 1;
+    padding: 5px;
+}
+
+.nav-item:hover {
+    color: var(--dark-purple-background-color);
+}
+
+.left {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left-pic img {
+    width: 100%;
+    height: 80px;
+}
+
+.right {
+    margin: 5px;
+    padding: 1px;
+    align-items: center;
+    display: flex;
+    width: 200px;
+}
+
+.hidden {
+    display: none;
+}
+
+.show-mobile {
+    display: none;
+}
+
+.to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.external-links{
+    margin: 20px;
+}
+.spacer{
+    margin: auto;
+        /* padding: 20px 204px */
+}
+footer {
+    display: flex;
+    background-color: var(--light-purple-hover-color);
+    padding: 0px;
+        flex-direction: column;
+}
+
+.rights {
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+}
+
+.outline {
+    display: block;
+    background-color: var(--white-color);
+    margin: 4px;
+    padding: 1.8px;
+    max-width: 180px;
+    border-radius: 40px;
+}
+
+.outline-2 {
+    display: block;
+    background-color: var(--white-color);
+    margin: 4px;
+    padding: 1.6px;
+    max-width: 150px;
+    border-radius: 40px;
+}
+
+.outline-3 {
+    display: block;
+    background-color: var(--white-color);
+    margin: 4px;
+    padding: 1.2px;
+    max-width: 120px;
+    border-radius: 40px;
+}
+
+.outline-4 {
+    display: block;
+    background-color: var(--dark-purple-background-color);
+    margin: 1.8px;
+    padding: 2px;
+    max-width: 195px;
+    border-radius: 40px;
+}
+
+.outline-5 {
+    display: block;
+    background-color: var(--dark-purple-background-color);
+    margin: 4px;
+    padding: 1.6px;
+    max-width: 180px;
+    border-radius: 40px;
+}
+
+.outline-6 {
+    display: block;
+    background-color: var(--dark-purple-background-color);
+    margin: 4px;
+    padding: 1.2px;
+    max-width: 160px;
+    border-radius: 40px;
+}
+
+.outline-7 {
+    display: block;
+    background-color: var(--white-color);
+    margin: 4px;
+    padding: 2px;
+    max-width: 210px;
+    border-radius: 40px;
+}
+
+/* Index-Styles */
+
+
+a {
+    text-decoration: none;
+    color: var(--dark-beige-links-color);
+}
+
+section {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-column-gap: 0px;
+    padding: 50px;
+    align-items: center;
+    justify-items: center;
+}
+
+.div1 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.div2 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.div3 {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.div4 {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+h1,
+h2 {
+    padding: 5px;
+    margin: 15px;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.name,.intro{
+    margin: 0px auto;
+}
+.web-title,
+.ux-title,
+.tech-title {
+    margin-bottom: 50px;
+    display: block;
+}
+
+p {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto Serif', serif;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:auto;
+    padding-bottom: 50px;
+    background-color: var(--white-color);
+    color: var(--animation-purlple-color);
+            gap: 0;
+            border-radius: 0 0 20px 20px;
+}
+.hero-heading{
+margin: 0 auto 50px auto;
+}
+/* video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    height: 70%;
+    width: 100%;
+    z-index: -1;
+    overflow: hidden;
+} */
+
+.ux-ui {
+    background-color: var(--dark-purple-background-color);
+}
+
+.wd {
+    background-color: var(--white-color);
+    color: var(--animation-purlple-color);
+    border-radius: 20px 10px 20px 10px;
+}
+
+.small-text {
+    max-width: 400px;
+    padding: 5px;
+}
+
+.medium-text {
+    max-width: 900px;
+    text-align: center;
+    margin: auto;
+    /* background-color: #d23c3c; */
+}
+
+.left-pic img,
+.right-pic img {
+    border-radius: 20px;
+    /* max-width: 100%; */
+    height: auto;
+    display: block;
+    /* margin: 5px auto 5px auto; */
+
+}
+
+.text-1 {
+    margin: 25px;
+}
+
+.carrousel {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    height: auto;
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.carrousel {
+    animation-direction: alternate;
+
+}
+
+.carrousel-left {
+    position: relative;
+    z-index: 1;
+    animation: left 5s 2;
+}
+
+.carrousel-right {
+    position: relative;
+    z-index: 1;
+    animation: right 5s 2;
+}
+
+@keyframes right {
+    0% {
+        background: red;
+        left: 0px;
+        top: 0px;
+        ;
+    }
+
+    25% {
+        background: yellow;
+        left: 200px;
+        top: 0px;
+    }
+
+    50% {
+        background: blue;
+        left: 200px;
+        /* top: 200px; */
+    }
+
+    75% {
+        background: green;
+        left: 0px;
+        /* top: 200px; */
+    }
+
+    100% {
+        background: red;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+@keyframes left {
+    0% {
+        background: red;
+        left: 0px;
+        top: 0px;
+        ;
+    }
+
+    25% {
+        background: yellow;
+        left: 200px;
+        top: 0px;
+    }
+
+    50% {
+        background: blue;
+        left: 200px;
+        /* top: 200px; */
+    }
+
+    75% {
+        background: green;
+        left: 0px;
+        /* top: 200px; */
+    }
+
+    100% {
+        background: red;
+        left: 0px;
+        top: 0px;
+    }
+}
+/* create a keyframe for the outlines to right animation, it has to be smooth. */
+.red {
+    color: red;
+}
+
+.black {
+    color: black;
+}
+
+.srink {
+    width: 80%;
+}
+
+.expand {
+    width: 80%;
+}
+
+/* ------- */
+
+
+
+
+
+
+
+/* Contact-Styles */
+.contact-grid {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.contact-me-layout {
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-row-gap: 20px;
+    /* max-width: 700px; */
+    /* border: 1px solid red; */
+}
+
+label {
+    display: block;
+    margin: 0 0 5px 20px;
+    /* margin: 50px; */
+}
+
+.client-input {
+    margin: auto 0;
+    /* width: 100%; */
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+textarea {
+    width: 80%;
+    height: 100px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 400px;
+    column-gap: 10px;
+    row-gap: 10px;
+    margin: 20px;
+}
+
+.form input::placeholder {
+    padding: 10px;
+}
+
+.form textarea::placeholder {
+    padding-left: 10px;
+}
+
+.submit-btn {
+    max-width: 250px;
+    max-height: 50px;
+    border-radius: 25px;
+    margin: 20px 0;
+}
+
+/* when found the gif img, try the styles below */
+/* gif-img{
+    width:100%;
+    height:0;
+    padding-bottom:75%;
+    position:relative;
+    border-radius: 25px;
+} */
+/* ------------------------------- */
+.project-pic {
+    padding: 25px;
+    margin: 25px;
+}
+
+.project-pic img {
+    max-width: 500px;
+    border-radius: 25px;
+}
+
+.text-2 {
+    padding: 50px;
+    margin: 50px;
+}
+
+@media (max-width: 950px) {
+    section {
+        padding: 25px;
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr;
+    }
+
+    .project-grid {
+        display: grid;
+        grid-template-rows: 400px;
+        column-gap: 10px;
+        row-gap: 10px;
+        margin: 20px;
+    }
+
+    .show-mobile {
+        display: none;
+    }
+
+    .project-pic img {
+        max-width: 400px;
+        border-radius: 25px;
+    }
+
+    .left-pic img,
+    .right-pic img {
+        border-radius: 20px;
+        max-width: 350px;
+        height: auto;
+        display: block;
+    }
+
+    .text-2 {
+        padding: 50px;
+        margin-top: 0;
+    }
+
+    .to-top {
+        display: none;
+    }
+
+    .carrousel {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 770px) {
+    section.hero {
+        gap: 0;
+    }
+
+    .hero h1 {
+        margin-bottom: 0;
+    }
+
+    .hero h2 {
+        margin-top: 0;
+    }
+
+    section {
+        padding: 25px;
+        grid-template-columns: 1fr;
+        gap: 0.9rem;
+    }
+
+    .div1 {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .div2 {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .div4 {
+        grid-area: 2 / 1 / 4 / 2;
+    }
+
+    .div3 {
+        grid-area: 4 / 1 / 5 / 2;
+    }
+
+    .div5 {
+        grid-area: 6 / 1 / 7 / 2;
+    }
+
+    .div6 {
+        grid-area: 5 / 1 / 1 / 2;
+    }
+
+    .to-top {
+        display: none;
+    }
+
+.outline {
+    display: block;
+    background-color: var(--white-color);
+    margin: 4px auto;    padding: 1.8px;
+    max-width: 180px;
+    border-radius: 40px;
+}
+
+.outline-2 {
+    display: block;
+    background-color: var(--white-color);
+    margin: 4px auto;    padding: 1.6px;
+    max-width: 150px;
+    border-radius: 40px;
+}
+
+.outline-3 {
+    display: block;
+    background-color: var(--white-color);
+    margin: 4px auto;    padding: 1.2px;
+    max-width: 120px;
+    border-radius: 40px;
+}
+
+.outline-4 {
+    display: block;
+    background-color: var(--dark-purple-background-color);
+    margin: 4px auto;    padding: 2px;
+    max-width: 195px;
+    border-radius: 40px;
+}
+
+.outline-5 {
+    display: block;
+    background-color: var(--dark-purple-background-color);
+    margin: 4px auto;    padding: 1.6px;
+    max-width: 180px;
+    border-radius: 40px;
+}
+
+.outline-6 {
+    display: block;
+    background-color: var(--dark-purple-background-color);
+    margin: 4px auto;    padding: 1.2px;
+    max-width: 160px;
+    border-radius: 40px;
+}
+
+.outline-7 {
+    display: block;
+    background-color: var(--white-color);
+    margin: 4px auto;
+    padding: 2px;
+    max-width: 210px;
+    border-radius: 40px;
+}
+    .left-pic img,
+    .right-pic img {
+        border-radius: 20px;
+        width: 100%;
+        height: 100%;
+        display: block;
+        margin: 5px auto 5px auto;
+        padding: 5px;
+    }
+
+    .hidden-mobile {
+        display: none;
+    }
+
+    .carrousel {
+        max-height: 200px;
+    }
+
+    .project-grid {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 200px;
+        column-gap: 10px;
+        row-gap: 10px;
+        margin: 20px;
+    }
+
+    .project-pic {
+        padding: 25px;
+        margin: 25px;
+    }
+
+    .project-pic img {
+        max-width: 250px;
+        border-radius: 25px;
+    }
+
+    .small-text {
+        max-width: 100%;
+        padding: 5px;
+    }
+
+    .text-1 {
+        margin: 15px;
+        text-align: center;
+    }
+
+    .text-2 {
+        padding: 50px;
+        margin-top: 0;
+    }
+
+    .contact-grid {
+        margin: 20px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    .carrousel {
+        padding: 0;
+    }
+}
+
+@media (max-width: 500px) {
+
+    input {
+        width: 100%;
+        height: 22%;
+    }
+
+    .form {
+        grid-row-gap: 10px;
+    }
+
+    textarea {
+        width:100%;
+    }
+
+    .contact-grid {
+        align-content: center;
+        /* grid-template-rows: repeat(4, 0.5fr); */
+    }
+
+    .client-input {
+        width: 100%;
+        margin: 0;
+    }
+
+    .text-2 {
+        padding: 30px;
+    }
+
+    .small-text {
+        text-align: center;
+    }
+
+    .gif-img {
+        display: none;
+    }
+
+    .submit-btn {
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    .web-title,
+    .ux-title,
+    .tech-title {
+        margin-bottom: 30px;
+    }
+
+.outline {
+    display: block;
+    background-color: var(--white-color);
+    margin: 4px auto;
+    padding: 1.8px;
+    max-width: 180px;
+    border-radius: 40px;
+}
+
+.outline-2 {
+    display: block;
+    background-color: var(--white-color);
+    margin: 4px auto;
+    padding: 1.4px;
+    max-width: 150px;
+    border-radius: 40px;
+}
+
+.outline-3 {
+    display: block;
+    background-color: var(--white-color);
+    margin: 4px auto;
+    padding: 1.2px;
+    max-width: 120px;
+    border-radius: 40px;
+}
+
+.outline-4 {
+    display: block;
+    background-color: var(--dark-purple-background-color);
+    margin: 4px auto;
+    padding: 2px;
+    max-width: 195px;
+    border-radius: 40px;
+}
+
+.outline-5 {
+    display: block;
+    background-color: var(--dark-purple-background-color);
+    margin: 4px auto;
+    padding: 1.6px;
+    max-width: 180px;
+    border-radius: 40px;
+}
+
+.outline-6 {
+    display: block;
+    background-color: var(--dark-purple-background-color);
+    margin: 4px auto;
+    padding: 1.2px;
+    max-width: 160px;
+    border-radius: 40px;
+}
+
+.outline-7 {
+    display: block;
+    background-color: var(--white-color);
+    margin: 4px auto;
+    padding: 2px;
+    max-width: 210px;
+    border-radius: 40px;
+}
+}
