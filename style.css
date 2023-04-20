@@ -282,8 +282,14 @@ p {
 
 .hero-heading {
     margin: 0 auto 50px auto;
+    font-size: 16px;
 }
-
+.form-btn{
+    background-color: var(--dark-purple-background-color);
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 10px 0 0 0;
+}
 .ux-ui {
     background-color: var(--dark-purple-background-color);
 }
@@ -338,43 +344,29 @@ p {
 .carrousel-left {
     position: relative;
     z-index: 1;
-    animation: left 5s 2;
+    animation: left linear 2s infinite;
 }
 
 .carrousel-right {
     position: relative;
     z-index: 1;
-    animation: right 5s 2;
+    animation: right linear 2s infinite;
 }
 
 @keyframes right {
-    0% {
-        background: red;
+0% {
+        background-color: red;
         left: 0px;
-        top: 0px;
-        ;
-    }
-
-    25% {
-        background: yellow;
-        left: 200px;
         top: 0px;
     }
 
     50% {
-        background: blue;
-        left: 200px;
-        /* top: 200px; */
-    }
-
-    75% {
-        background: green;
-        left: 0px;
-        /* top: 200px; */
+        background-color: blue;
+        top: 10px;
     }
 
     100% {
-        background: red;
+        background-color: red;
         left: 0px;
         top: 0px;
     }
@@ -382,35 +374,21 @@ p {
 
 @keyframes left {
     0% {
-        background: red;
-        left: 0px;
-        top: 0px;
-        ;
-    }
-
-    25% {
-        background: yellow;
-        left: 200px;
-        top: 0px;
-    }
-
-    50% {
-        background: blue;
-        left: 200px;
-        /* top: 200px; */
-    }
-
-    75% {
-        background: green;
-        left: 0px;
-        /* top: 200px; */
-    }
-
-    100% {
-        background: red;
-        left: 0px;
-        top: 0px;
-    }
+            background-color: red;
+            left: 0px;
+            top: 0px;
+        }
+    
+        50% {
+            background-color: blue;
+            top: 10px;
+        }
+    
+        100% {
+            background-color: red;
+            left: 0px;
+            top: 0px;
+        }
 }
 
 
@@ -618,11 +596,11 @@ textarea {
         grid-area: 4 / 1 / 5 / 2;
     }
 
-    .div5 {
+    .div6 {
         grid-area: 6 / 1 / 7 / 2;
     }
 
-    .div6 {
+    .div5 {
         grid-area: 5 / 1 / 1 / 2;
     }
 
