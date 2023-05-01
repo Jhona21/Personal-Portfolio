@@ -121,7 +121,7 @@ opacity: 1;}
 }
 
 .icons {
-    max-width: 50px;
+    max-width: 40px;
 }
 
 .spacer {
@@ -334,39 +334,28 @@ p {
     height: auto;
     display: block;
     margin: 5px auto 5px auto;
-}
-
-.carrousel {
     animation-direction: alternate;
-
 }
 
-.carrousel-left {
+.carrousel-icons {
     position: relative;
     z-index: 1;
     animation: left linear 2s infinite;
 }
 
-.carrousel-right {
-    position: relative;
-    z-index: 1;
-    animation: right linear 2s infinite;
-}
+
 
 @keyframes right {
-0% {
-        background-color: red;
+    0%{
         left: 0px;
         top: 0px;
     }
 
     50% {
-        background-color: blue;
-        top: 10px;
+        top: 5px;
     }
 
     100% {
-        background-color: red;
         left: 0px;
         top: 0px;
     }
@@ -374,18 +363,15 @@ p {
 
 @keyframes left {
     0% {
-            background-color: red;
             left: 0px;
             top: 0px;
         }
     
         50% {
-            background-color: blue;
-            top: 10px;
+            top: 5px;
         }
     
         100% {
-            background-color: red;
             left: 0px;
             top: 0px;
         }
@@ -410,12 +396,6 @@ p {
 }
 
 /* ------- */
-
-
-
-
-
-
 
 /* Contact-Styles */
 .contact-grid {
@@ -735,6 +715,9 @@ textarea {
     .carrousel {
         padding: 0;
     }
+    .skills{
+        margin: 50px 20px;
+    }
 }
 
 @media (max-width: 500px) {
@@ -776,7 +759,6 @@ textarea {
 
     .contact-grid {
         align-content: center;
-        /* grid-template-rows: repeat(4, 0.5fr); */
     }
 
     .client-input {
