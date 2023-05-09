@@ -300,9 +300,14 @@ p {
     border-radius: 20px 10px 20px 10px;
 }
 
-.small-text {
+.small-text, .small-text-2 {
     max-width: 400px;
     padding: 5px;
+    text-indent: 0;
+}
+
+.small-text-2{
+    
 }
 
 .medium-text {
@@ -449,7 +454,7 @@ textarea {
 
 .project-grid {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 0.5fr 1fr;
     grid-template-rows: 400px;
     column-gap: 10px;
     row-gap: 10px;
@@ -491,8 +496,9 @@ textarea {
 }
 
 .text-2 {
-    padding: 50px;
-    margin: 50px;
+    padding: 20px;
+    margin: auto;
+    /* max-width: 500px; */
 }
 
 @media (max-width: 950px) {
