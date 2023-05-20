@@ -12,6 +12,9 @@
     --animation-purlple-color: #4F2867;
     --white-color: #FFFFFF;
 
+    --small-font:20px;
+    --mobile-font:18px;
+    --large-font:25px;
 }
 
 /* Main Styles */
@@ -250,7 +253,7 @@ h2 {
 
 .name,
 .intro {
-    margin: 0px auto;
+    /* margin: 0px auto; */
 }
 
 .web-title,
@@ -281,8 +284,7 @@ p {
 }
 
 .hero-heading {
-    margin: 0 auto 50px auto;
-    font-size: 16px;
+    font-size:var(--large-font);
 }
 .form-btn{
     background-color: var(--dark-purple-background-color);
@@ -304,6 +306,7 @@ p {
     max-width: 400px;
     padding: 5px;
     text-indent: 0;
+    font-size: var(--large-font);
 }
 
 .small-text-2{
@@ -313,9 +316,8 @@ p {
 .medium-text {
     max-width: 900px;
     text-align: center;
-    margin: auto;
-    /* background-color: #d23c3c; */
-}
+    /* margin: auto; */
+font-size: var(--large-font);}
 
 .left-pic img,
 .right-pic img {
@@ -324,7 +326,10 @@ p {
     height: auto;
     display: block;
     /* margin: 5px auto 5px auto; */
+}
 
+.srink:hover,.expand:hover{
+    opacity: 0.9;
 }
 
 .text-1 {

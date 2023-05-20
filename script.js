@@ -4,6 +4,8 @@ const burguer = document.getElementById("burguer");
 const openMenu = document.getElementById("open");
 const closeMenu = document.getElementById("close");
 
+
+
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () { scrollFunction() };
 function scrollFunction() {
