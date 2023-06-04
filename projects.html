@@ -11,22 +11,34 @@
 </head>
 
 <body>
-            <nav class="nav-bar navbar-2">
-                <div class="left">
-        <img class="logo" src="Resources/logo-white.png" class="brand-logo" alt="Brand-logo">
-                </div>
-                <div class="middle">
-                    <a href="projects.html" class="nav-item">Projects</a>
-                    <a href="contactme.html" class="nav-item">Contact Me</a>
-                    <a href="index.html" class="nav-item">About</a>
-                </div>
-            </nav>
+    <nav class="nav-bar">
+        <div class="left">
+            <img class="logo" src="Resources/logo-white.png" class="brand-logo" alt="Brand-logo">
+        </div>
+        <div class="middle ">
+            <a href="projects.html" class="nav-item">Projects</a>
+            <a href="contactme.html" class="nav-item">Contact Me</a>
+            <a href="" class="nav-item">About</a>
+        </div>
+        <div class="right" id="burguer">
+            <img class="burguer-closed" id="open" src="Resources/menu-square.png" alt="open-menu">
+            <img class="burguer-open" id="close" src="Resources/x-mark-square.png" alt="open-menu">
+    
+        </div>
+    </nav>
+    <a href="projects.html" class="nav-item-burguer">Projects</a>
+    <a href="contactme.html" class="nav-item-burguer">Contact Me</a>
+    <a href="" class="nav-item-burguer">About</a>
     <section class="project-grid">
 
         <div class="project-pic">
-            <img src="Resources/UxUi.jpg" alt="UX/UI picture">
+            <img class="img-project-1"src="Resources/UxUi.jpg" alt="UX/UI picture">
+            <div class="show-mobile">
+                <h1>UX/UI Design</h1>
+                <p>a short description of the project</p>
+            </div>
         </div>
-        <div class="text-2">
+        <div class="text-2 hidden-mobile">
             <h1>UX/UI Design
                 <span class="outline"></span>
                 <span class="outline-2"></span><span class="outline-3"></span>
@@ -37,9 +49,13 @@
             </p>
         </div>
         <div class="project-pic">
-            <img src="Resources/UxUi.jpg" alt="UX/UI picture">
+            <img class="img-project-2"src="Resources/UxUi.jpg" alt="UX/UI picture">
+            <div class="show-mobile">
+                <h1>UX/UI Design</h1>
+                <p>a short description of the project</p>
+            </div>
         </div>
-        <div class="text-2">
+        <div class="text-2 hidden-mobile">
             <h1>UX/UI Design
                 <span class="outline"></span>
                 <span class="outline-2"></span><span class="outline-3"></span>
@@ -50,9 +66,13 @@
             </p>
         </div>
         <div class="project-pic">
-            <img src="Resources/UxUi.jpg" alt="UX/UI picture">
+            <img class="img-project-3"src="Resources/UxUi.jpg" alt="UX/UI picture">
+            <div class="show-mobile">
+                <h1>UX/UI Design</h1>
+                <p>a short description of the project</p>
+            </div>
         </div>
-        <div class="text-2">
+        <div class="text-2 hidden-mobile">
             <h1>UX/UI Design
                 <span class="outline"></span>
                 <span class="outline-2"></span><span class="outline-3"></span>
@@ -63,9 +83,13 @@
             </p>
         </div>
         <div class="project-pic">
-            <img src="Resources/UxUi.jpg" alt="UX/UI picture">
+            <img class="img-project-4"src="Resources/UxUi.jpg" alt="UX/UI picture">
+            <div class="show-mobile">
+                <h1>UX/UI Design</h1>
+                <p>a short description of the project</p>
+            </div>
         </div>
-        <div class="text-2">
+        <div class="text-2 hidden-mobile">
             <h1>UX/UI Design
                 <span class="outline"></span>
                 <span class="outline-2"></span><span class="outline-3"></span>
@@ -75,7 +99,6 @@
                 perspiciatis cum facere necessitatibus sapiente mollitia dolores, ipsa expedita sint. Fuga dolor illum dolorem!
             </p>
         </div>
-
     </section>
             <button class="to-top" id="scroll-up" title="Go to Top" onclick="topFunction()">arrow up</button>
     <footer>

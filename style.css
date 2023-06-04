@@ -39,9 +39,6 @@ body {
     background-color: var(--light-purple-hover-color);
 }
 
-.navbar-2 {
-    background-color: var(--light-purple-hover-color);
-}
 
 .logo {
     max-width: 60px;
@@ -97,7 +94,6 @@ body {
 .hidden {
     display: none;
 }
-
 .show-mobile {
     display: none;
 }
@@ -520,9 +516,11 @@ textarea {
         row-gap: 10px;
         margin: 20px;
     }
-
+.hidden-mobile{
+    display: none;
+}
     .show-mobile {
-        display: none;
+        display: block;
     }
 
     .project-pic img {
@@ -741,6 +739,9 @@ textarea {
     .nav-bar {
         justify-content: space-between;
     }
+    .show-mobile{
+        display: block;
+    }
     .show{
         display: block;
         text-align: center;
@@ -784,7 +785,15 @@ textarea {
     .small-text {
         text-align: center;
     }
-
+    .project-pic {
+        padding: 20px;
+        margin: 10px;
+    }
+    .project-pic img {
+        max-width: 150px;
+        height: 200px;
+        border-radius: 25px;
+    }
     .gif-img {
         display: none;
     }
