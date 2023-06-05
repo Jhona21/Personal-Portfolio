@@ -765,7 +765,9 @@ textarea {
         width: 100%;
         height: 22%;
     }
-
+ section{
+    padding:10px
+ }
     .nav-bar {
         justify-content: space-between;
     }
@@ -831,13 +833,13 @@ textarea {
     }
     .project-grid {
        display: grid;
-        grid-template-rows: 300px;
-        column-gap: 30px;
+        grid-template-rows: 280px;
+        column-gap: 15px;
         row-gap: 10px;
-        margin: 20px;
+        margin: 15px;
     }
     .project-pic {
-        padding: 20px;
+        padding: 10px;
         margin: 10px;
     }
     .project-pic img {
