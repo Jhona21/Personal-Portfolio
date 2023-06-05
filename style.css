@@ -94,7 +94,8 @@ body {
 .hidden {
     display: none;
 }
-.show-mobile {
+.show-mobile,
+.show-mobile-2{
     display: none;
 }
 .hide-mobile{
@@ -511,7 +512,8 @@ textarea {
 
     .project-grid {
         display: grid;
-        grid-template-rows: 400px;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 300px;
         column-gap: 10px;
         row-gap: 10px;
         margin: 20px;
@@ -519,15 +521,31 @@ textarea {
 .hidden-mobile{
     display: none;
 }
-    .show-mobile {
+    .show-mobile,
+    .show-mobile-2 {
         display: block;
     }
-
+    .project-pic {
+        position: relative;
+        padding: 25px;
+        margin: 25px;
+    }
+    .show-mobile-2 {
+        position: absolute;
+        top: 70%;
+        left: 38%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+    }
+    .overlay-title {
+        margin: 2px
+    }
     .project-pic img {
-        max-width: 400px;
+        max-width: 300px;
         border-radius: 25px;
     }
-
+ 
     .left-pic img,
     .right-pic img {
         border-radius: 20px;
@@ -681,22 +699,34 @@ textarea {
     .project-grid {
         display: grid;
         grid-template-columns: 50% 50%;
-        grid-template-rows: 200px;
+        grid-template-rows:300px;
         column-gap: 10px;
         row-gap: 10px;
         margin: 20px;
     }
 
     .project-pic {
+        position: relative;
         padding: 25px;
         margin: 25px;
     }
 
     .project-pic img {
-        max-width: 250px;
+        position: relative;
+        max-width: 280px;
         border-radius: 25px;
-    }
-
+    }    
+        .show-mobile-2 {
+            position: absolute;
+            top: 65%;
+            left: 40%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+        .overlay-title{
+            margin:2px
+        }
     .small-text {
         max-width: 100%;
         padding: 5px;
@@ -742,6 +772,20 @@ textarea {
     .show-mobile{
         display: block;
     }
+           .project-pic {
+               position: relative;
+               padding: 25px;
+               margin: 25px;
+           }
+    
+           .show-mobile-2 {
+               position: absolute;
+               top: 50%;
+               left: 50%;
+               transform: translate(-50%, -50%);
+               text-align: center;
+               color: white;
+           }
     .show{
         display: block;
         text-align: center;
@@ -784,6 +828,13 @@ textarea {
 
     .small-text {
         text-align: center;
+    }
+    .project-grid {
+       display: grid;
+        grid-template-rows: 400px;
+        column-gap: 10px;
+        row-gap: 10px;
+        margin: 20px;
     }
     .project-pic {
         padding: 20px;
