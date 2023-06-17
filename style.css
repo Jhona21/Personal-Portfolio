@@ -249,11 +249,11 @@ h2 {
     font-family: 'Playfair Display', serif;
     font-family: 'Source Sans Pro', sans-serif;
 }
-
-.name,
+/* need to check what was this for */
+/* .name,
 .intro {
-    /* margin: 0px auto; */
-}
+    /* margin: 0px auto; 
+} */
 
 .web-title,
 .ux-title,
@@ -543,11 +543,14 @@ textarea {
     .overlay-title {
         margin: 2px
     }
+    .overlay-p{
+        color: var(--light-paraghraph-color);
+    }
     .project-pic img {
         max-width: 300px;
         border-radius: 25px;
     }
- 
+
     .left-pic img,
     .right-pic img {
         border-radius: 20px;
