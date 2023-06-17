@@ -26,9 +26,8 @@ function topFunction() {
 burguer.addEventListener("click", function(){
     burguer.classList.toggle("open")
     const burguerMenu = document.querySelectorAll(".nav-item-burguer");
-openMenu.classList.toggle("show-mobile");
-closeMenu.classList.toggle("hide-mobile")
-    console.log(burguerMenu)
+    openMenu.classList.toggle("show-mobile")
+    closeMenu.classList.toggle("hide-mobile");
     burguerMenu.forEach((burguerMenu) => {
         burguerMenu.classList.toggle("show")
     })
