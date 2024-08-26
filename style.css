@@ -2,14 +2,14 @@
 /* fix project view layout as well as the form layout(look for pictures for the form.) */
 :root {
     /* primary colours */
-    --dark-purple-background-color: #22223B;
-    --light-purple-hover-color: #4A4E69;
+    --dark-purple-background-color:#641E15;
+    --light-purple-hover-color: #40332C;
     --dark-beige-links-color: #9A8C98;
     --light-beige-hover-color: #C9ADA7;
     --light-paraghraph-color: #F2E9E4;
 
     /* Secondary Colours */
-    --animation-purlple-color: #4F2867;
+    --animation-purlple-color: #641E15;
     --white-color: #FFFFFF;
 
     --small-font:20px;
