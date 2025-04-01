@@ -34,15 +34,7 @@ function topFunction() {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-// burguer.addEventListener("click", function(){
-//     burguer.classList.toggle("open")
-//     const burguerMenu = document.querySelectorAll(".nav-item-burguer");
-//     openMenu.classList.toggle("show-mobile")
-//     closeMenu.classList.toggle("hide-mobile");
-//     burguerMenu.forEach((burguerMenu) => {
-//         burguerMenu.classList.toggle("show")
-//     })
-// })
+
 // to stop the animation when hovered
 const icons = Array.from(document.querySelectorAll(".carrousel-icons"));
 
