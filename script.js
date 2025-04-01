@@ -1,10 +1,21 @@
 // Get the button:
 let mybutton = document.getElementById("scroll-up");
-const burguer = document.getElementById("burguer");
 const openMenu = document.getElementById("open");
 const closeMenu = document.getElementById("close");
 
 
+// JavaScript for burger menu toggle functionality
+const burger = document.getElementById("burguer");
+const mobileMenu = document.getElementById("mobile-menu");
+
+// Toggle burger menu visibility
+burger.addEventListener("click", () => {
+    mobileMenu.classList.toggle("open"); // Toggle mobile menu visibility
+    burger.classList.toggle("open"); // Toggle burger icon change
+        openMenu.classList.toggle("show-mobile")
+    closeMenu.classList.toggle("hide-mobile");
+
+});
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () { scrollFunction() };
@@ -23,15 +34,15 @@ function topFunction() {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-burguer.addEventListener("click", function(){
-    burguer.classList.toggle("open")
-    const burguerMenu = document.querySelectorAll(".nav-item-burguer");
-    openMenu.classList.toggle("show-mobile")
-    closeMenu.classList.toggle("hide-mobile");
-    burguerMenu.forEach((burguerMenu) => {
-        burguerMenu.classList.toggle("show")
-    })
-})
+// burguer.addEventListener("click", function(){
+//     burguer.classList.toggle("open")
+//     const burguerMenu = document.querySelectorAll(".nav-item-burguer");
+//     openMenu.classList.toggle("show-mobile")
+//     closeMenu.classList.toggle("hide-mobile");
+//     burguerMenu.forEach((burguerMenu) => {
+//         burguerMenu.classList.toggle("show")
+//     })
+// })
 // to stop the animation when hovered
 const icons = Array.from(document.querySelectorAll(".carrousel-icons"));
 
